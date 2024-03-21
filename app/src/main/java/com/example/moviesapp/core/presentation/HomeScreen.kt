@@ -29,7 +29,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.moviesapp.movieList.domain.model.Movie
 import com.example.moviesapp.movieList.presentation.MovieListEvent
+import com.example.moviesapp.movieList.presentation.MovieListState
 import com.example.moviesapp.movieList.presentation.MovieListViewModel
 import com.example.moviesapp.movieList.presentation.PopularMovieScreen
 import com.example.moviesapp.movieList.presentation.UpcomingMovieScreen
@@ -148,4 +150,395 @@ fun BottomNavBar(
 data class NavbarItem(
     val title: String,
     val icon: ImageVector
+)
+
+val movieListState1 = MovieListState(
+    upcomingMovieList = listOf(
+        Movie(
+            adult = false,
+            backdrop_path = "/gJL5kp5FMopB2sN4WZYnNT5uO0u.jpg",
+            genre_ids =
+            listOf(
+                28,
+                12,
+                16,
+                35,
+                10751
+            ),
+            id = 1011985,
+            original_language = "en",
+            original_title = "Kung Fu Panda 4",
+            overview = "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
+            popularity = 3781.812,
+            poster_path = "/wkfG7DaExmcVsGLR4kLouMwxeT5.jpg",
+            release_date = "2024-03-02",
+            title = "Kung Fu Panda 4",
+            video = false,
+            vote_average = 6.9,
+            vote_count = 157,
+            category = "popular"
+        ),
+        Movie(
+            adult = false,
+            backdrop_path = "/gJL5kp5FMopB2sN4WZYnNT5uO0u.jpg",
+            genre_ids =
+            listOf(
+                28,
+                12,
+                16,
+                35,
+                10751
+            ),
+            id = 1011985,
+            original_language = "en",
+            original_title = "Kung Fu Panda 4",
+            overview = "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
+            popularity = 3781.812,
+            poster_path = "/wkfG7DaExmcVsGLR4kLouMwxeT5.jpg",
+            release_date = "2024-03-02",
+            title = "Kung Fu Panda 4",
+            video = false,
+            vote_average = 6.9,
+            vote_count = 157,
+            category = "popular"
+        ),
+        Movie(
+            adult = false,
+            backdrop_path = "/gJL5kp5FMopB2sN4WZYnNT5uO0u.jpg",
+            genre_ids =
+            listOf(
+                28,
+                12,
+                16,
+                35,
+                10751
+            ),
+            id = 1011985,
+            original_language = "en",
+            original_title = "Kung Fu Panda 4",
+            overview = "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
+            popularity = 3781.812,
+            poster_path = "/wkfG7DaExmcVsGLR4kLouMwxeT5.jpg",
+            release_date = "2024-03-02",
+            title = "Kung Fu Panda 4",
+            video = false,
+            vote_average = 6.9,
+            vote_count = 157,
+            category = "popular"
+        ),
+        Movie(
+            adult = false,
+            backdrop_path = "/gJL5kp5FMopB2sN4WZYnNT5uO0u.jpg",
+            genre_ids =
+            listOf(
+                28,
+                12,
+                16,
+                35,
+                10751
+            ),
+            id = 1011985,
+            original_language = "en",
+            original_title = "Kung Fu Panda 4",
+            overview = "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
+            popularity = 3781.812,
+            poster_path = "/wkfG7DaExmcVsGLR4kLouMwxeT5.jpg",
+            release_date = "2024-03-02",
+            title = "Kung Fu Panda 4",
+            video = false,
+            vote_average = 6.9,
+            vote_count = 157,
+            category = "popular"
+        ),
+        Movie(
+            adult = false,
+            backdrop_path = "/gJL5kp5FMopB2sN4WZYnNT5uO0u.jpg",
+            genre_ids =
+            listOf(
+                28,
+                12,
+                16,
+                35,
+                10751
+            ),
+            id = 1011985,
+            original_language = "en",
+            original_title = "Kung Fu Panda 4",
+            overview = "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
+            popularity = 3781.812,
+            poster_path = "/wkfG7DaExmcVsGLR4kLouMwxeT5.jpg",
+            release_date = "2024-03-02",
+            title = "Kung Fu Panda 4",
+            video = false,
+            vote_average = 6.9,
+            vote_count = 157,
+            category = "popular"
+        ),
+        Movie(
+            adult = false,
+            backdrop_path = "/gJL5kp5FMopB2sN4WZYnNT5uO0u.jpg",
+            genre_ids =
+            listOf(
+                28,
+                12,
+                16,
+                35,
+                10751
+            ),
+            id = 1011985,
+            original_language = "en",
+            original_title = "Kung Fu Panda 4",
+            overview = "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
+            popularity = 3781.812,
+            poster_path = "/wkfG7DaExmcVsGLR4kLouMwxeT5.jpg",
+            release_date = "2024-03-02",
+            title = "Kung Fu Panda 4",
+            video = false,
+            vote_average = 6.9,
+            vote_count = 157,
+            category = "popular"
+        ),
+        Movie(
+            adult = false,
+            backdrop_path = "/gJL5kp5FMopB2sN4WZYnNT5uO0u.jpg",
+            genre_ids =
+            listOf(
+                28,
+                12,
+                16,
+                35,
+                10751
+            ),
+            id = 1011985,
+            original_language = "en",
+            original_title = "Kung Fu Panda 4",
+            overview = "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
+            popularity = 3781.812,
+            poster_path = "/wkfG7DaExmcVsGLR4kLouMwxeT5.jpg",
+            release_date = "2024-03-02",
+            title = "Kung Fu Panda 4",
+            video = false,
+            vote_average = 6.9,
+            vote_count = 157,
+            category = "popular"
+        ),
+        Movie(
+            adult = false,
+            backdrop_path = "/gJL5kp5FMopB2sN4WZYnNT5uO0u.jpg",
+            genre_ids =
+            listOf(
+                28,
+                12,
+                16,
+                35,
+                10751
+            ),
+            id = 1011985,
+            original_language = "en",
+            original_title = "Kung Fu Panda 4",
+            overview = "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
+            popularity = 3781.812,
+            poster_path = "/wkfG7DaExmcVsGLR4kLouMwxeT5.jpg",
+            release_date = "2024-03-02",
+            title = "Kung Fu Panda 4",
+            video = false,
+            vote_average = 6.9,
+            vote_count = 157,
+            category = "popular"
+        ),
+    ),
+    popularMovieList = listOf(
+        Movie(
+            adult = false,
+            backdrop_path = "/gJL5kp5FMopB2sN4WZYnNT5uO0u.jpg",
+            genre_ids =
+            listOf(
+                28,
+                12,
+                16,
+                35,
+                10751
+            ),
+            id = 1011985,
+            original_language = "en",
+            original_title = "Kung Fu Panda 4",
+            overview = "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
+            popularity = 3781.812,
+            poster_path = "/wkfG7DaExmcVsGLR4kLouMwxeT5.jpg",
+            release_date = "2024-03-02",
+            title = "Kung Fu Panda 4",
+            video = false,
+            vote_average = 6.9,
+            vote_count = 157,
+            category = "popular"
+        ),
+        Movie(
+            adult = false,
+            backdrop_path = "/gJL5kp5FMopB2sN4WZYnNT5uO0u.jpg",
+            genre_ids =
+            listOf(
+                28,
+                12,
+                16,
+                35,
+                10751
+            ),
+            id = 1011985,
+            original_language = "en",
+            original_title = "Kung Fu Panda 4",
+            overview = "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
+            popularity = 3781.812,
+            poster_path = "/wkfG7DaExmcVsGLR4kLouMwxeT5.jpg",
+            release_date = "2024-03-02",
+            title = "Kung Fu Panda 4",
+            video = false,
+            vote_average = 6.9,
+            vote_count = 157,
+            category = "popular"
+        ),
+        Movie(
+            adult = false,
+            backdrop_path = "/gJL5kp5FMopB2sN4WZYnNT5uO0u.jpg",
+            genre_ids =
+            listOf(
+                28,
+                12,
+                16,
+                35,
+                10751
+            ),
+            id = 1011985,
+            original_language = "en",
+            original_title = "Kung Fu Panda 4",
+            overview = "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
+            popularity = 3781.812,
+            poster_path = "/wkfG7DaExmcVsGLR4kLouMwxeT5.jpg",
+            release_date = "2024-03-02",
+            title = "Kung Fu Panda 4",
+            video = false,
+            vote_average = 6.9,
+            vote_count = 157,
+            category = "popular"
+        ),
+        Movie(
+            adult = false,
+            backdrop_path = "/gJL5kp5FMopB2sN4WZYnNT5uO0u.jpg",
+            genre_ids =
+            listOf(
+                28,
+                12,
+                16,
+                35,
+                10751
+            ),
+            id = 1011985,
+            original_language = "en",
+            original_title = "Kung Fu Panda 4",
+            overview = "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
+            popularity = 3781.812,
+            poster_path = "/wkfG7DaExmcVsGLR4kLouMwxeT5.jpg",
+            release_date = "2024-03-02",
+            title = "Kung Fu Panda 4",
+            video = false,
+            vote_average = 6.9,
+            vote_count = 157,
+            category = "popular"
+        ),
+        Movie(
+            adult = false,
+            backdrop_path = "/gJL5kp5FMopB2sN4WZYnNT5uO0u.jpg",
+            genre_ids =
+            listOf(
+                28,
+                12,
+                16,
+                35,
+                10751
+            ),
+            id = 1011985,
+            original_language = "en",
+            original_title = "Kung Fu Panda 4",
+            overview = "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
+            popularity = 3781.812,
+            poster_path = "/wkfG7DaExmcVsGLR4kLouMwxeT5.jpg",
+            release_date = "2024-03-02",
+            title = "Kung Fu Panda 4",
+            video = false,
+            vote_average = 6.9,
+            vote_count = 157,
+            category = "popular"
+        ),
+        Movie(
+            adult = false,
+            backdrop_path = "/gJL5kp5FMopB2sN4WZYnNT5uO0u.jpg",
+            genre_ids =
+            listOf(
+                28,
+                12,
+                16,
+                35,
+                10751
+            ),
+            id = 1011985,
+            original_language = "en",
+            original_title = "Kung Fu Panda 4",
+            overview = "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
+            popularity = 3781.812,
+            poster_path = "/wkfG7DaExmcVsGLR4kLouMwxeT5.jpg",
+            release_date = "2024-03-02",
+            title = "Kung Fu Panda 4",
+            video = false,
+            vote_average = 6.9,
+            vote_count = 157,
+            category = "popular"
+        ),
+        Movie(
+            adult = false,
+            backdrop_path = "/gJL5kp5FMopB2sN4WZYnNT5uO0u.jpg",
+            genre_ids =
+            listOf(
+                28,
+                12,
+                16,
+                35,
+                10751
+            ),
+            id = 1011985,
+            original_language = "en",
+            original_title = "Kung Fu Panda 4",
+            overview = "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
+            popularity = 3781.812,
+            poster_path = "/wkfG7DaExmcVsGLR4kLouMwxeT5.jpg",
+            release_date = "2024-03-02",
+            title = "Kung Fu Panda 4",
+            video = false,
+            vote_average = 6.9,
+            vote_count = 157,
+            category = "popular"
+        ),
+        Movie(
+            adult = false,
+            backdrop_path = "/gJL5kp5FMopB2sN4WZYnNT5uO0u.jpg",
+            genre_ids =
+            listOf(
+                28,
+                12,
+                16,
+                35,
+                10751
+            ),
+            id = 1011985,
+            original_language = "en",
+            original_title = "Kung Fu Panda 4",
+            overview = "Po is gearing up to become the spiritual leader of his Valley of Peace, but also needs someone to take his place as Dragon Warrior. As such, he will train a new kung fu practitioner for the spot and will encounter a villain called the Chameleon who conjures villains from the past.",
+            popularity = 3781.812,
+            poster_path = "/wkfG7DaExmcVsGLR4kLouMwxeT5.jpg",
+            release_date = "2024-03-02",
+            title = "Kung Fu Panda 4",
+            video = false,
+            vote_average = 6.9,
+            vote_count = 157,
+            category = "popular"
+        ),
+    ),
 )

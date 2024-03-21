@@ -19,6 +19,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.example.moviesapp.detailScreen.DetailScreen
 import com.example.moviesapp.movieList.presentation.MovieListViewModel
 import com.example.moviesapp.ui.theme.MoviesAppTheme
 import com.example.moviesapp.util.Screen
@@ -52,7 +53,7 @@ class MainActivity : ComponentActivity() {
                                 }
                             )
                         ){backStackEntry ->
-//                            DetailScreen(backStackEntry)
+                            DetailScreen(backStackEntry)
                         }
 
                     }
